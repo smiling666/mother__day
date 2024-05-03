@@ -1,0 +1,81 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: url(../img/цветочки111.jpeg) no-repeat center/cover;
+    margin: 0;
+}
+
+.wrapper {
+    overflow: hidden;
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    animation: gradient 3s forwards;
+}
+
+.content {
+    background-color: darkkhaki;
+    display: inline-block;
+    color: white;
+    padding: 50px;
+    border-radius: 200px 0px 200px 0px;
+    animation: shift 3s;
+    border: dashed;
+    box-shadow: 7px 7px 6px 6px rgb(94, 134, 94);
+
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    animation: text-transform 1s 3s alternate 2;
+}
+
+.poem {
+    font-size: 30px;
+}
+
+
+
+@keyframes shift {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background: rgba(78, 109, 78, 0.521);
+    }
+
+    50% {
+        background: #f5f8c48c;
+    }
+
+    100% {
+        background: rgba(255, 255, 255, 0.623);
+    }
+
+}
+
+@keyframes text-transform {
+    0% {}
+
+    100% {
+        transform: skew(10deg, 10deg);
+    }
+
+}
